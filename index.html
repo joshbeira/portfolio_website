@@ -39,8 +39,8 @@
       <span class="brand__role">/ cs + ml</span>
     </a>
     <nav class="nav" aria-label="Sections">
-      <a href="#work">work</a>
       <a href="#experience">experience</a>
+      <a href="#work">work</a>
       <a href="#writing">writing</a>
       <a href="#contact">contact</a>
     </nav>
@@ -60,74 +60,6 @@
         <p class="hero__lead">Computer Science student and the head of Machine Learning and Software Engineer.</p>
         <p class="hero__body">I work on perception and learning systems that have to be right in under 50 milliseconds. Mostly PyTorch, ROS and a lot of coordinate frames. Currently training the models that steer an autonomous race car, and researching text-to-image person re-identification at Warwick.</p>
       </div>
-    </section>
-
-    <section id="work" class="section">
-      <div class="section__head">
-        <h2>selected work</h2>
-        <span class="section__rule" aria-hidden="true"></span>
-        <span class="section__count">04</span>
-      </div>
-
-      <article class="work-row">
-        <span class="work-row__num" aria-hidden="true">01</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">Text-to-Image Person Re-Identification</h3>
-          <p class="work-row__body">Bursary-funded independent research. Built a generative data augmentation pipeline using Stable Diffusion to replace backgrounds and isolate subjects, then fine-tuned CLIP on the noise-reduced set with custom loss functions.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">Stable Diffusion</span>
-          <span class="tag">CLIP</span>
-          <span class="tag">PyTorch</span>
-        </div>
-        <span class="work-row__when">2026</span>
-      </article>
-
-      <article class="work-row">
-        <span class="work-row__num" aria-hidden="true">02</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">Real-time perception and steering for an autonomous race car</h3>
-          <p class="work-row__body">Segmentation CNNs detect track cones; LiDAR clustering lifted accuracy 47%. RL and supervised steering models cut error 34%. Docker-packaged, ≤50 ms from frame to command.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">PyTorch</span>
-          <span class="tag">OpenCV</span>
-          <span class="tag">ROS</span>
-          <span class="tag">Docker</span>
-        </div>
-        <span class="work-row__when">2025 —</span>
-      </article>
-
-      <article class="work-row">
-        <span class="work-row__num" aria-hidden="true">03</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">AI finance assistant — financial literacy and contract analysis</h3>
-          <p class="work-row__body">Led a four-person hackathon team. Asynchronous workflows orchestrate parallel Gemini 2.5 Pro agents through the Google API, cutting end-to-end latency. Demoed to non-technical judges.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">Flask</span>
-          <span class="tag">React</span>
-          <span class="tag">Gemini 2.5 Pro</span>
-          <span class="tag">SQL</span>
-        </div>
-        <span class="work-row__when">2025</span>
-      </article>
-
-      <article class="work-row">
-        <span class="work-row__num" aria-hidden="true">04</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">COVID-19 mortality risk model, from scratch</h3>
-          <p class="work-row__body">Logistic regression written without high-level ML libraries — NumPy, Pandas and hand-derived gradient descent. Feature-engineered a large clinical dataset to 75.82% accuracy, evaluated on precision and recall.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">NumPy</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">no sklearn</span>
-        </div>
-        <span class="work-row__when">2025</span>
-      </article>
-
-      <div class="list-end" aria-hidden="true"></div>
     </section>
 
     <section id="experience" class="section">
@@ -200,6 +132,74 @@
         </div>
 
       </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2>selected work</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+        <span class="section__count">04</span>
+      </div>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">01</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">Text-to-Image Person Re-Identification</h3>
+          <p class="work-row__body">Bursary-funded independent research. Built a generative data augmentation pipeline using Stable Diffusion to replace backgrounds and isolate subjects, then fine-tuned CLIP on the noise-reduced set with custom loss functions.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">Stable Diffusion</span>
+          <span class="tag">CLIP</span>
+          <span class="tag">PyTorch</span>
+        </div>
+        <span class="work-row__when">2026</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">02</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">Real-time perception and steering for an autonomous race car</h3>
+          <p class="work-row__body">Segmentation CNNs detect track cones; LiDAR clustering lifted accuracy 47%. RL and supervised steering models cut error 34%. Docker-packaged, ≤50 ms from frame to command.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">ROS</span>
+          <span class="tag">Docker</span>
+        </div>
+        <span class="work-row__when">2025 —</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">03</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">AI finance assistant — financial literacy and contract analysis</h3>
+          <p class="work-row__body">Led a four-person hackathon team. Asynchronous workflows orchestrate parallel Gemini 2.5 Pro agents through the Google API, cutting end-to-end latency. Demoed to non-technical judges.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">Flask</span>
+          <span class="tag">React</span>
+          <span class="tag">Gemini 2.5 Pro</span>
+          <span class="tag">SQL</span>
+        </div>
+        <span class="work-row__when">2025</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">04</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">COVID-19 mortality risk model, from scratch</h3>
+          <p class="work-row__body">Logistic regression written without high-level ML libraries — NumPy, Pandas and hand-derived gradient descent. Feature-engineered a large clinical dataset to 75.82% accuracy, evaluated on precision and recall.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">NumPy</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">no sklearn</span>
+        </div>
+        <span class="work-row__when">2025</span>
+      </article>
+
+      <div class="list-end" aria-hidden="true"></div>
     </section>
 
     <section id="writing" class="section">
