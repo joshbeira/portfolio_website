@@ -16,7 +16,9 @@
   --dot-dim:     #3A3833;
 
   /* ink */
-  --faint:       #7A756B;
+  /* The design's #7A756B measured 4.18:1 on the ground — under the 4.5:1 AA
+     floor for the small mono meta text this drives. Nudged to 5.16:1. */
+  --faint:       #8A8478;
   --muted:       #918B80;
   --ink-dim:     #DAD5C9;
   --ink:         #E9E4D9;
