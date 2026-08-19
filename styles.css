@@ -128,7 +128,6 @@ main:focus { outline: none; }
   color: var(--ink);
 }
 .brand__name { font-family: var(--mono); font-size: 12px; font-weight: 500; }
-.brand__role { font-family: var(--mono); font-size: 11px; color: var(--faint); }
 
 .nav {
   display: flex;
