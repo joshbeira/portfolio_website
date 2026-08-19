@@ -57,8 +57,9 @@ animating, and pauses entirely while the tab is in the background.
 
 ## Deploying
 
-Push to `main` with Pages set to **GitHub Actions** as its source (Settings → Pages →
-Build and deployment → Source). The workflow does the rest.
+Pushing to `main` deploys, with Pages set to **GitHub Actions** as its source
+(Settings → Pages → Build and deployment → Source).
 
-Before the first deploy, fill in the two placeholders in `index.html`'s `<head>`: the
-`<link rel="canonical">` and `<meta property="og:url">` tags, which need the final domain.
+Live at <https://joshbeira.github.io/portfolio_website/>. That URL is also hardcoded in
+the `canonical` and `og:url` tags in `index.html` — update both if the site ever moves to
+a custom domain.
