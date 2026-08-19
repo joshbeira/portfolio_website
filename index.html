@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Josh Beira — CS + ML</title>
+<meta name="description" content="Josh Beira — Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing. Real-time perception, learning systems and autonomous racing.">
+<meta name="theme-color" content="#100F0E">
+<meta name="color-scheme" content="dark">
+
+<!-- TODO: add <link rel="canonical"> and <meta property="og:url"> once the final domain is known. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Josh Beira — CS + ML">
+<meta property="og:description" content="Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing. Real-time perception, learning systems and autonomous racing.">
+<meta property="og:site_name" content="Josh Beira">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Josh Beira — CS + ML">
+<meta name="twitter:description" content="Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+
+<canvas id="bg" class="bg-canvas" aria-hidden="true"></canvas>
+
+<div class="page">
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand__name">josh beira</span>
+      <span class="brand__role">/ cs + ml</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">work</a>
+      <a href="#experience">experience</a>
+      <a href="#writing">writing</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap" tabindex="-1">
+
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__meta">
+          <span class="hero__pulse" aria-hidden="true"></span>
+          <span>coventry, uk</span>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <span>university of warwick</span>
+        </p>
+        <h1 class="hero__name">Josh Beira</h1>
+        <p class="hero__lead">Computer Science student and the head of Machine Learning and Software Engineer.</p>
+        <p class="hero__body">I work on perception and learning systems that have to be right in under 50 milliseconds. Mostly PyTorch, ROS and a lot of coordinate frames. Currently training the models that steer an autonomous race car, and researching text-to-image person re-identification at Warwick.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2>selected work</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+        <span class="section__count">04</span>
+      </div>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">01</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">Text-to-Image Person Re-Identification</h3>
+          <p class="work-row__body">Bursary-funded independent research. Built a generative data augmentation pipeline using Stable Diffusion to replace backgrounds and isolate subjects, then fine-tuned CLIP on the noise-reduced set with custom loss functions.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">Stable Diffusion</span>
+          <span class="tag">CLIP</span>
+          <span class="tag">PyTorch</span>
+        </div>
+        <span class="work-row__when">2026</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">02</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">Real-time perception and steering for an autonomous race car</h3>
+          <p class="work-row__body">Segmentation CNNs detect track cones; LiDAR clustering lifted accuracy 47%. RL and supervised steering models cut error 34%. Docker-packaged, ≤50 ms from frame to command.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">ROS</span>
+          <span class="tag">Docker</span>
+        </div>
+        <span class="work-row__when">2025 —</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">03</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">AI finance assistant — financial literacy and contract analysis</h3>
+          <p class="work-row__body">Led a four-person hackathon team. Asynchronous workflows orchestrate parallel Gemini 2.5 Pro agents through the Google API, cutting end-to-end latency. Demoed to non-technical judges.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">Flask</span>
+          <span class="tag">React</span>
+          <span class="tag">Gemini 2.5 Pro</span>
+          <span class="tag">SQL</span>
+        </div>
+        <span class="work-row__when">2025</span>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">04</span>
+        <div class="work-row__main">
+          <h3 class="work-row__title">COVID-19 mortality risk model, from scratch</h3>
+          <p class="work-row__body">Logistic regression written without high-level ML libraries — NumPy, Pandas and hand-derived gradient descent. Feature-engineered a large clinical dataset to 75.82% accuracy, evaluated on precision and recall.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">NumPy</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">no sklearn</span>
+        </div>
+        <span class="work-row__when">2025</span>
+      </article>
+
+      <div class="list-end" aria-hidden="true"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section__head">
+        <h2>experience</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+        <span class="section__count">2022 — now</span>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-when">Apr 2026 — Jun 2026</div>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Research Intern, Artificial Intelligence and Machine Learning</h3>
+            <p class="tl-org">Dept. of Computer Science, University of Warwick</p>
+            <p class="tl-note">Awarded a competitive university bursary for independent research into a more efficient approach to text-to-image person re-identification. Formulated custom loss functions and benchmarked against academic baselines.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">Jan 2026 — present</div>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Organiser — Logistics and Outreach</h3>
+            <p class="tl-org">The Warwick Hackathon (WHACK)</p>
+            <p class="tl-note">Secured £5,000 of sponsorship from leading tech firms, opening the event to 300+ students nationwide. Ran venue, power and logistics with university stakeholders.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">Oct 2025 — present</div>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Head of Machine Learning</h3>
+            <p class="tl-org">Warwick Racing</p>
+            <p class="tl-note">Own the perception and control stack: image-segmentation CNNs with LiDAR clustering, RL and supervised steering models, SQL over large datasets, Docker delivery. Work across the electrical and mechanical teams to keep vision-to-command under 50 ms.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">Jun 2022 — Sep 2024</div>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">Founder and Lead Developer</h3>
+            <p class="tl-org">Student web development agency</p>
+            <p class="tl-note">Founded and led a cross-functional team delivering frontend, backend and database work for 10+ local businesses. Owned the full SDLC from client consultation to deployment and maintenance.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">Sep 2025 — Jul 2028</div>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">BSc (Hons) Computer Science</h3>
+            <p class="tl-org">University of Warwick</p>
+            <p class="tl-note">Coventry, UK.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">Sep 2023 — Jun 2025</div>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">A-levels — A*A*A*A*A*</h3>
+            <p class="tl-org">Cadbury Sixth Form, Birmingham</p>
+            <p class="tl-note">Mathematics, Further Mathematics, Computer Science, Physics, EPQ.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="writing" class="section">
+      <div class="section__head section__head--tight">
+        <h2>writing</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+      </div>
+      <p class="section__note">placeholder entries — send real posts and I'll swap them in.</p>
+
+      <article class="post-row">
+        <h3 class="post-row__title">Why LiDAR clustering fixed what a bigger model could not</h3>
+        <span class="post-row__kind">notes</span>
+        <span class="post-row__when">placeholder</span>
+      </article>
+
+      <article class="post-row">
+        <h3 class="post-row__title">Writing logistic regression without sklearn, and what it teaches you</h3>
+        <span class="post-row__kind">notes</span>
+        <span class="post-row__when">placeholder</span>
+      </article>
+
+      <article class="post-row">
+        <h3 class="post-row__title">Fifty milliseconds: budgeting latency in an autonomous stack</h3>
+        <span class="post-row__kind">notes</span>
+        <span class="post-row__when">placeholder</span>
+      </article>
+
+      <div class="list-end" aria-hidden="true"></div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="section__head section__head--wide">
+        <h2>contact</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-main">
+          <a class="contact-email" href="mailto:joshbeira@gmail.com">joshbeira@gmail.com</a>
+          <p class="contact-note">Always interested in opportunities, collaborations, and interesting conversations.</p>
+        </div>
+        <div class="contact-links">
+          <span class="contact-links__rule" aria-hidden="true"></span>
+          <a href="https://github.com/joshbeira" rel="me noopener"><span class="contact-links__key">github</span><span>joshbeira</span></a>
+          <a href="https://linkedin.com/in/josh-beira" rel="me noopener"><span class="contact-links__key">linkedin</span><span>josh-beira</span></a>
+          <a href="tel:+447366714364"><span class="contact-links__key">phone</span><span>+44 7366 714364</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>josh beira — 2026</span>
+      <span class="bg-toggle" role="group" aria-label="Background animation">
+        <span id="bg-note">bg: dijkstra, weighted lattice</span>
+        <button type="button" class="bg-btn is-on" data-bg-mode="lattice" aria-pressed="true">dijkstra</button>
+        <span class="bg-toggle__sep" aria-hidden="true">/</span>
+        <button type="button" class="bg-btn" data-bg-mode="wavefront" aria-pressed="false">bfs</button>
+      </span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="scripts/background.js" defer></script>
+</body>
+</html>
