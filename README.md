@@ -18,7 +18,7 @@ property that lets it live on a GitHub Pages project subpath.
 | Path | What it holds |
 | --- | --- |
 | `index.html` | All content. Projects, roles and posts are written as markup, not loaded from JS. Sections run hero, experience, projects, writing, contact. |
-| `styles.css` | Design tokens on `:root`, then one section of rules per page section. |
+| `styles.css` | Design tokens on `:root`, then one section of rules per page section. Block order does not track page order — the projects rules precede the experience timeline rules. |
 | `scripts/background.js` | The animated graph-traversal canvas. Nothing else on the page depends on it. |
 | `favicon.svg` | Two nodes and an edge, in the accent colour. |
 | `.github/workflows/deploy.yml` | Builds nothing; uploads the repo root to GitHub Pages on push to `main`. |

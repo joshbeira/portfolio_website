@@ -128,12 +128,13 @@ def _():
     assert n == 4, f"{n} tl-item blocks, want 4"
 
 
-@check(3, "Research Intern dot is dimmed (role ended Jun 2026)")
+@check(3, "Research Intern dot is bright (role is ongoing)")
 def _():
     block = re.search(r'<div class="tl-item">\s*<div class="tl-when">Apr 2026 [^<]*</div>.*?</div>\s*</div>',
                       html, re.S)
     assert block, "Research Intern tl-item not found"
-    assert "tl-dot tl-dot--dim" in block.group(0), "dot is still bright"
+    assert '<span class="tl-dot" aria-hidden="true">' in block.group(0), "dot is not bright"
+    assert "tl-dot--dim" not in block.group(0), "dot is still dimmed"
 
 
 @check(3, "Research Intern note is on the role lens")

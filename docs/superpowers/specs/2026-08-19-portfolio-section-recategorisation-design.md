@@ -90,14 +90,18 @@ unchanged. Neither has a project counterpart, so neither has anything to divide.
 ### Dot states
 
 The site's convention is a bright `.tl-dot` for current entries and `.tl-dot--dim` for past
-ones. Research Intern ended Jun 2026, so it moves to dim. Resulting states, in page order:
+ones. Research Intern is still running, so it stays bright. Resulting states, in page order:
 
 | Entry | Dates | Dot |
 | --- | --- | --- |
-| Research Intern | Apr 2026 — Jun 2026 | dim |
+| Research Intern | Apr 2026 — present | bright |
 | Organiser, WHACK | Jan 2026 — present | bright |
 | Head of ML, Warwick Racing | Oct 2025 — present | bright |
 | Founder and Lead Developer | Jun 2022 — Sep 2024 | dim |
+
+(Corrected after this design was approved: this section originally dimmed the Research
+Intern dot because the role's stated end date, Jun 2026, had passed — but the role never
+ended, so the dot stays bright and the dates were updated to Apr 2026 — present.)
 
 `.tl-item:last-child` tightening now applies to the Founder entry automatically.
 
@@ -137,8 +141,8 @@ Unchanged. Already last on the page.
 
 Both rules are used by the writing section only, and both become unused:
 
-- `.section__head--tight` (`styles.css:213`)
-- `.section__note` (`styles.css:225`)
+- `.section__head--tight`
+- `.section__note`
 
 `.section__head--wide` stays — the contact section still uses it.
 
