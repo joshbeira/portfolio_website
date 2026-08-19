@@ -60,6 +60,6 @@ animating, and pauses entirely while the tab is in the background.
 Pushing to `main` deploys, with Pages set to **GitHub Actions** as its source
 (Settings → Pages → Build and deployment → Source).
 
-Live at <https://joshbeira.github.io/portfolio_website/>. That URL is also hardcoded in
-the `canonical` and `og:url` tags in `index.html` — update both if the site ever moves to
-a custom domain.
+Live at <https://joshbeira.com>. The domain is set by the `CNAME` file at the repo root
+and mirrored in the `canonical` and `og:url` tags in `index.html` — all three have to
+agree, so change them together if the site ever moves again.
