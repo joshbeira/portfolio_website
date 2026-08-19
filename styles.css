@@ -231,7 +231,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 
 .list-end { border-top: 1px solid var(--rule-soft); }
 
-/* --- selected work -------------------------------------------------------- */
+/* --- projects ------------------------------------------------------------- */
 
 .work-row {
   display: flex;
