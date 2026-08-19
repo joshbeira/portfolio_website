@@ -73,8 +73,12 @@ The "custom loss functions" detail is dropped here; project 01 already carries i
 
 **Head of Machine Learning, Warwick Racing** — Oct 2025 — present
 
-> Own the perception and control stack, and set the latency budget it has to meet. Work
-> across the electrical and mechanical teams to get it onto the car.
+> Own the perception and control stack against a strict latency budget. Work across the
+> electrical and mechanical teams to get it onto the car.
+
+(Corrected after review: the earlier wording said the role *set* the latency budget, which
+overclaimed — the source text describes working to keep vision-to-command under 50 ms, a
+constraint the role meets rather than authors.)
 
 The tech inventory (segmentation CNNs, LiDAR clustering, RL and supervised steering, SQL,
 Docker) moves out to project 02. The `50 ms` figure is deliberately not repeated here — the

@@ -144,7 +144,7 @@ def _():
 
 @check(3, "Head of ML note is on the role lens")
 def _():
-    assert "Own the perception and control stack, and set the latency budget it has to meet." in html
+    assert "Own the perception and control stack against a strict latency budget." in html
     assert "image-segmentation CNNs with LiDAR clustering" not in html, "tech inventory survives in experience"
 
 
@@ -430,7 +430,7 @@ edits.append((
 #    and the repeated latency figure (the hero and project 02 both carry it).
 edits.append((
 '''            <p class="tl-note">Own the perception and control stack: image-segmentation CNNs with LiDAR clustering, RL and supervised steering models, SQL over large datasets, Docker delivery. Work across the electrical and mechanical teams to keep vision-to-command under 50 ms.</p>''',
-'''            <p class="tl-note">Own the perception and control stack, and set the latency budget it has to meet. Work across the electrical and mechanical teams to get it onto the car.</p>'''))
+'''            <p class="tl-note">Own the perception and control stack against a strict latency budget. Work across the electrical and mechanical teams to get it onto the car.</p>'''))
 
 # 4. Delete both education entries outright.
 edits.append((
