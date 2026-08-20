@@ -17,7 +17,7 @@ property that lets it live on a GitHub Pages project subpath.
 
 | Path | What it holds |
 | --- | --- |
-| `index.html` | All content. Projects, roles and posts are written as markup, not loaded from JS. Sections run hero, experience, projects, writing, contact. |
+| `index.html` | All content. Projects and roles are written as markup, not loaded from JS. Sections run hero, work, experience, education, contact. |
 | `styles.css` | Design tokens on `:root`, then one section of rules per page section. Block order does not track page order — the projects rules precede the experience timeline rules. |
 | `scripts/background.js` | The animated graph-traversal canvas. Nothing else on the page depends on it. |
 | `favicon.svg` | Two nodes and an edge, in the accent colour. |
@@ -28,22 +28,18 @@ property that lets it live on a GitHub Pages project subpath.
 
 Everything is in `index.html`, in the order it appears on the page.
 
-- **A project** — copy an `<article class="work-row">` block in the `#projects` section.
-  The `work-row__num` is the hand-written index; update the `04` in the section header to
-  match the count. The class prefix is still `work-row` even though the section is now
-  called projects — the markup was left alone when the heading was renamed.
-- **A role** — copy a `.tl-item` block in the `#experience` section. Use
-  `<span class="tl-dot">` for roles you currently hold and
-  `<span class="tl-dot tl-dot--dim">` for ones that have ended. The last item in the
-  timeline automatically gets a tighter bottom padding. Experience is jobs only; the site
-  carries no education section.
-- **A post** — copy a `<article class="post-row">` block. The three currently there are
-  unwritten, and say so: their `post-row__kind` reads `planned` and their `post-row__when`
-  reads `soon`. When one goes live, change those two spans to `notes` and the date.
-- **Links on project and post rows** — these are `<article>` elements, not links, because
-  the design had no destinations for them yet. To make one clickable, change the
-  `<article class="work-row">` to `<a class="work-row" href="…">`; the hover treatment
-  already works on both.
+- **A project** — copy an `<article class="work-row">` block in the `#work` section. The
+  `work-row__num` is the hand-written index; update the count in the section header to
+  match. One visible paragraph in `.work-row__summary`, everything longer inside the
+  card's `<details class="disclose">`.
+- **A role** — copy a `.tl-item` block in `#experience`. Solid `tl-dot` for current, add
+  `tl-dot--dim` for ended. One visible paragraph in `.tl-item__summary`, the rest inside
+  the disclosure.
+- **An education entry** — copy a `.tl-item` block in `#education`. These carry no
+  disclosure.
+
+Long copy lives inside `<details class="disclose">`. The collapsed paragraph should stand
+alone and read as a complete thought, not as a truncation.
 
 ## The background animation
 
