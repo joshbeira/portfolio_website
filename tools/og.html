@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Josh Beira — og:image</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Values lifted from styles.css (:root) and favicon.svg. Nothing guessed. */
+  :root {
+    --bg:          #100F0E;
+    --border:      #2C2A26;
+    --faint:       #8A8478;
+    --ink-bright:  #F2EEE4;
+    --accent:      #7ED9C4;
+    --sans: 'Space Grotesk', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink-bright);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--ink-bright);
+  }
+
+  .tag {
+    margin: 26px 0 0;
+    font-family: var(--mono);
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--faint);
+  }
+
+  .glyph {
+    position: absolute;
+    right: 90px;
+    bottom: 90px;
+    width: 96px;
+    height: 96px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="name">Josh Beira</h1>
+    <p class="tag">machine learning · real-time systems</p>
+
+    <svg class="glyph" viewBox="0 0 32 32" role="img" aria-label="Josh Beira">
+      <path d="M9.5 22.5 L22.5 9.5" stroke="#7ED9C4" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="9.5" cy="22.5" r="3.4" fill="#7ED9C4"/>
+      <circle cx="22.5" cy="9.5" r="3.4" fill="#7ED9C4"/>
+    </svg>
+  </div>
+</body>
+</html>
