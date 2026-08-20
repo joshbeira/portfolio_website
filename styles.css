@@ -538,6 +538,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 }
 
 .bg-toggle { display: flex; align-items: center; gap: 10px; }
+.bg-toggle__label { color: var(--dot-dim); }
 .bg-toggle__sep { color: var(--dot-dim); }
 
 .bg-btn {
