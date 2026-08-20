@@ -4,20 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Josh Beira — CS + ML</title>
-<meta name="description" content="Josh Beira — Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing. Real-time perception, learning systems and autonomous racing.">
+<title>Josh Beira — machine learning and real-time systems</title>
+<meta name="description" content="Josh Beira — second-year Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing. Real-time perception, agentic benchmarks, and accessible interfaces.">
 <meta name="theme-color" content="#100F0E">
 <meta name="color-scheme" content="dark">
 
 <link rel="canonical" href="https://joshbeira.com/">
 <meta property="og:url" content="https://joshbeira.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Josh Beira — CS + ML">
-<meta property="og:description" content="Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing. Real-time perception, learning systems and autonomous racing.">
+<meta property="og:title" content="Josh Beira — machine learning and real-time systems">
+<meta property="og:description" content="Second-year CS at Warwick. Head of Machine Learning at Warwick Racing. Real-time perception, agentic benchmarks, and accessible interfaces.">
 <meta property="og:site_name" content="Josh Beira">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Josh Beira — CS + ML">
-<meta name="twitter:description" content="Computer Science student at the University of Warwick and Head of Machine Learning at Warwick Racing.">
+<meta property="og:image" content="https://joshbeira.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Josh Beira — machine learning and real-time systems">
+<meta name="twitter:description" content="Second-year CS at Warwick. Head of Machine Learning at Warwick Racing. Real-time perception, agentic benchmarks, and accessible interfaces.">
+<meta name="twitter:image" content="https://joshbeira.com/og.png">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +42,9 @@
       <span class="brand__name">Josh Beira</span>
     </a>
     <nav class="nav" aria-label="Sections">
+      <a href="#work">work</a>
       <a href="#experience">experience</a>
-      <a href="#projects">projects</a>
-      <a href="#writing">writing</a>
+      <a href="#education">education</a>
       <a href="#contact">contact</a>
     </nav>
   </header>
@@ -49,6 +53,8 @@
 
     <section class="hero">
       <div class="hero__inner">
+        <img class="hero__photo" src="profile.jpg" width="120" height="120"
+             alt="Josh Beira" decoding="async">
         <p class="hero__meta">
           <span class="hero__pulse" aria-hidden="true"></span>
           <span>coventry, uk</span>
@@ -56,157 +62,260 @@
           <span>university of warwick</span>
         </p>
         <h1 class="hero__name">Josh Beira</h1>
-        <p class="hero__lead">Computer Science student, Head of Machine Learning at Warwick Racing, and software engineer.</p>
-        <p class="hero__body">I work on perception and learning systems that have to be right in under 50 milliseconds. Mostly PyTorch, ROS and a lot of coordinate frames. Currently training the models that steer an autonomous race car, and researching text-to-image person re-identification at Warwick.</p>
+        <p class="hero__lead">Computer Science at Warwick. Head of Machine Learning at Warwick Racing.</p>
+        <p class="hero__body">I build machine learning systems that have to survive a constraint — a 50 ms deadline on a moving car, a user who cannot see the screen, or a benchmark designed to catch me fooling myself.</p>
+        <p class="hero__body">Right now that means the perception and steering stack for Warwick’s autonomous race car, a bursary-funded research project on text-to-image person re-identification, and a summer on Generating Genius’s technology and data science programme with PDT Partners and National Grid.</p>
+        <p class="hero__links">
+          <a href="/cv.pdf">cv</a>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <a href="mailto:joshbeira@gmail.com">email</a>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <a href="https://github.com/joshbeira" rel="noopener" target="_blank">github</a>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <a href="https://linkedin.com/in/josh-beira" rel="noopener" target="_blank">linkedin</a>
+        </p>
       </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2>selected work</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+        <span class="section__count">05</span>
+      </div>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">01</span>
+        <div class="work-row__body">
+          <h3 class="work-row__title"><a href="https://github.com/joshbeira/Agentic-Trading-Benchmark-PDT-Hackathon-" rel="noopener" target="_blank">pdtbench — an agentic trading benchmark with a control group</a></h3>
+          <p class="work-row__meta">2026 · PDT Partners hackathon</p>
+          <p class="work-row__summary">A language model makes money on a historical market window. Is that skill, or does it remember the chart?</p>
+          <ul class="work-row__bullets">
+            <li>Every real window is paired with a synthetic twin — matched on total return (±3pp), volatility (±15%) and regime, so the trade to make is identical and only the identity differs. Beating the real window by more than its twin is the edge.</li>
+            <li>Regressing that gap against how often the model can name the window turns “is this memorisation?” into a slope you can measure.</li>
+            <li>The engine fills at the next unseen open and a read-audit test makes look-ahead impossible by construction. Baselines and the agent enter through the same in-process MCP server, so fee parity holds by construction rather than by assertion.</li>
+            <li>Sharpe is floored at 0.25 × buy-and-hold daily volatility, because plain Sharpe on a mostly-cash account rewards deploying 1% of capital for two lucky days. An agent that never trades scores exactly zero.</li>
+            <li>218 tests, none touching the network.</li>
+            <li>Environment, baselines and analysis complete; the live model batch is the next step.</li>
+            <li>Came in first at PDT Partners hackathon 2026.</li>
+          </ul>
+          <p class="work-row__tags">
+            <span class="work-row__tag">Python</span>
+            <span class="work-row__tag">MCP</span>
+            <span class="work-row__tag">Streamlit</span>
+            <span class="work-row__tag">Parquet</span>
+            <span class="work-row__tag">pytest</span>
+          </p>
+          <p class="work-row__links">
+            <a href="https://github.com/joshbeira/Agentic-Trading-Benchmark-PDT-Hackathon-" rel="noopener" target="_blank">repo ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">02</span>
+        <div class="work-row__body">
+          <h3 class="work-row__title"><a href="https://github.com/joshbeira/Penny" rel="noopener" target="_blank">Penny — voice-first banking for blind and low-vision customers</a></h3>
+          <p class="work-row__meta">2026 · Barclays Accessibility Challenge</p>
+          <p class="work-row__summary">An accessible mode of a bank’s app where voice, sound and touch are the primary channels and the screen is secondary.</p>
+          <ul class="work-row__bullets">
+            <li><strong>Read-Back Rule</strong>: nothing executes until Penny states exactly what will happen and is confirmed. Every completed action writes a hash-chained, tamper-evident receipt.</li>
+            <li><strong>Post Box</strong>: photograph a letter, mask the sensitive digits on-device with Tesseract before anything leaves the phone, then hear it read back as a summary, verbatim, or explained — and act on it in the same flow.</li>
+            <li><strong>Layout Lock</strong>, a Playwright + axe CI gate that fails the build if the accessibility tree changes without a migration flag. The accessibility contract is enforced by the pipeline, not by remembering.</li>
+            <li>Account health is a two-second earcon rather than a number, and the week’s spending plays as a five-second stereo sonification. Quiet Mode swaps speech for high-contrast cards and three named haptic patterns.</li>
+            <li>Runs fully offline: no key, no network, no crash — the demo works in airplane mode.</li>
+          </ul>
+          <p class="work-row__tags">
+            <span class="work-row__tag">TypeScript</span>
+            <span class="work-row__tag">React</span>
+            <span class="work-row__tag">Vite</span>
+            <span class="work-row__tag">Tone.js</span>
+            <span class="work-row__tag">Tesseract.js</span>
+            <span class="work-row__tag">Zustand</span>
+            <span class="work-row__tag">PWA</span>
+            <span class="work-row__tag">Playwright/axe</span>
+          </p>
+          <p class="work-row__links">
+            <a href="https://github.com/joshbeira/Penny" rel="noopener" target="_blank">repo ↗</a>
+            <span class="hero__sep" aria-hidden="true">·</span>
+            <a href="https://hey-penny.vercel.app" rel="noopener" target="_blank">live demo ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">03</span>
+        <div class="work-row__body">
+          <h3 class="work-row__title"><a href="https://github.com/joshbeira/byte-the-evidence-sol2" rel="noopener" target="_blank">Byte the Evidence — an adversarial negotiation trainer for junior M&amp;A lawyers</a></h3>
+          <p class="work-row__meta">2026 · Hack the Law 2026, Cambridge - came in Second for Legora track</p>
+          <p class="work-row__summary">An Ace Attorney-style visual novel where you negotiate against AI opposing counsel across LOI, due diligence and definitive agreement.</p>
+          <ul class="work-row__bullets">
+            <li>Four Google ADK agents behind one session: a persona-driven negotiator that plants legal errors and guards hidden facts, an adjudicator scoring every turn, a phase-boundary coach, and a final evaluator producing per-clause grades and a debrief of everything you missed.</li>
+            <li>Catching a planted error, or drawing out a fact the other side is hiding, is the scoring mechanic — so the trainer rewards the actual skill rather than fluency.</li>
+            <li><code>MOCK_LLM=1</code> returns canned responses for the whole agent graph, so the demo never depended on an API key or a rate limit holding up on the day.</li>
+          </ul>
+          <p class="work-row__tags">
+            <span class="work-row__tag">Python</span>
+            <span class="work-row__tag">FastAPI</span>
+            <span class="work-row__tag">Google ADK</span>
+            <span class="work-row__tag">Gemini</span>
+            <span class="work-row__tag">SSE</span>
+          </p>
+          <p class="work-row__links">
+            <a href="https://github.com/joshbeira/byte-the-evidence-sol2" rel="noopener" target="_blank">repo ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">04</span>
+        <div class="work-row__body">
+          <h3 class="work-row__title"><a href="https://github.com/joshbeira/LambdaGPT" rel="noopener" target="_blank">λGPT — a natural-language REPL built from parser combinators, not an LLM</a></h3>
+          <p class="work-row__meta">2026 · Warwick coursework</p>
+          <p class="work-row__summary">A conversational interface where every intent is a parser, every answer is derived, and nothing is generated.</p>
+          <ul class="work-row__bullets">
+            <li>Megaparsec’s <code>try</code> lets the parser backtrack between “what is two plus two” and “what is the weather like today” without consuming input; <code>string'</code> and <code>optional</code> make it case-insensitive and tolerant of trailing punctuation, so valid input doesn’t fail on a missing question mark.</li>
+            <li>Arithmetic is evaluated over an AST with a <code>foldl</code> accumulator for left-to-right natural-language precedence. <code>evaluateExpr</code> returns <code>Either String Int</code>, so referencing “that” before any maths has happened is an error value rather than a runtime crash.</li>
+            <li>Went past the spec with a live Open-Meteo forecast, isolated in its own module and fetched with <code>httpJSONEither</code> — a dropped network returns a polite string instead of killing the REPL. Keyless by choice, so it can’t fail on someone else’s rate limit.</li>
+            <li>Memory is an explicit association list threaded through the loop by tail recursion rather than a <code>StateT</code> transformer over IO — less machinery, same guarantee.</li>
+          </ul>
+          <p class="work-row__tags">
+            <span class="work-row__tag">Haskell</span>
+            <span class="work-row__tag">Megaparsec</span>
+            <span class="work-row__tag">Aeson</span>
+            <span class="work-row__tag">http-conduit</span>
+            <span class="work-row__tag">Stack</span>
+          </p>
+          <p class="work-row__links">
+            <a href="https://github.com/joshbeira/LambdaGPT" rel="noopener" target="_blank">repo ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="work-row">
+        <span class="work-row__num" aria-hidden="true">05</span>
+        <div class="work-row__body">
+          <h3 class="work-row__title"><a href="https://github.com/joshbeira/COVID-Mortality-Risk-Model" rel="noopener" target="_blank">COVID-19 mortality risk — logistic regression from scratch, and a negative result</a></h3>
+          <p class="work-row__meta">2025</p>
+          <p class="work-row__summary">Sigmoid, binary cross-entropy and the gradient updates written directly in NumPy. The interesting part is that it didn’t work.</p>
+          <ul class="work-row__bullets">
+            <li>No scikit-learn in the model — the cost function and both partial derivatives are hand-derived, <code>StandardScaler</code> is the only thing borrowed, and only because unscaled age dominates the gradient and skews the cost surface.</li>
+            <li><strong>75.82% accuracy against a 75.63% majority-class baseline.</strong> Recall 2.35%: it found 27 of 1,148 deaths. On the metric that matters clinically it had learned almost nothing.</li>
+            <li>Diagnosed rather than buried: severe class imbalance, no class weighting, threshold left at 0.5. Written up in the README as unsuitable for clinical use, because it is.</li>
+          </ul>
+          <p class="work-row__tags">
+            <span class="work-row__tag">Python</span>
+            <span class="work-row__tag">NumPy</span>
+            <span class="work-row__tag">Pandas</span>
+            <span class="work-row__tag">from scratch</span>
+          </p>
+          <p class="work-row__links">
+            <a href="https://github.com/joshbeira/COVID-Mortality-Risk-Model" rel="noopener" target="_blank">repo ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <div class="list-end" aria-hidden="true"></div>
     </section>
 
     <section id="experience" class="section">
       <div class="section__head">
         <h2>experience</h2>
         <span class="section__rule" aria-hidden="true"></span>
-        <span class="section__count">2022 — now</span>
+        <span class="section__count">2023 — now</span>
       </div>
 
       <div class="timeline">
 
-        <div class="tl-item">
-          <div class="tl-when">Apr 2026 — present</div>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — <time datetime="2026-08">Aug 2026</time></p>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">Tech and Data Science Internship Scholar</h3>
+            <p class="tl-org">Generating Genius · London</p>
+            <p class="tl-note">Selected for Generating Genius’s technology and data science programme, run with PDT Partners and National Grid. One of 24 places from over 1,000 applicants. Built pdtbench at the PDT hackathon: an agentic trading benchmark that separates a model’s trading skill from its memory of the chart.</p>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — present</p>
           <div class="tl-body">
             <span class="tl-dot" aria-hidden="true"></span>
             <h3 class="tl-role">Research Intern, Artificial Intelligence and Machine Learning</h3>
-            <p class="tl-org">Dept. of Computer Science, University of Warwick</p>
-            <p class="tl-note">Awarded a competitive university bursary to run an independent research project on text-to-image person re-identification. Set the research direction and benchmarked the result against published academic baselines.</p>
+            <p class="tl-org">Department of Computer Science, University of Warwick · Coventry</p>
+            <p class="tl-note">Bursary-funded independent research on text-to-image person re-identification. Built a generative data augmentation pipeline that uses Stable Diffusion to replace backgrounds and isolate subjects, then fine-tuned CLIP on the resulting lower-noise set with custom loss functions, benchmarked against published baselines. Discovered and proved that the OpendAI’s CLIP model has problems and its performance dropped significantly when the colour changes (bag of words problem) and fine tuned the model to counter for this problem and used CUHK-PEDES data base that’s made of real-world CCTV footages.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-when">Jan 2026 — present</div>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-01">Jan 2026</time> — present</p>
           <div class="tl-body">
             <span class="tl-dot" aria-hidden="true"></span>
-            <h3 class="tl-role">Organiser — Logistics and Outreach</h3>
-            <p class="tl-org">The Warwick Hackathon (WHACK)</p>
-            <p class="tl-note">Secured £5,000 of sponsorship from leading tech firms, opening the event to 300+ students nationwide. Ran venue, power and logistics with university stakeholders.</p>
+            <h3 class="tl-role">Organiser, Logistics and Outreach</h3>
+            <p class="tl-org">The Warwick Hackathon (WHACK) · Coventry</p>
+            <p class="tl-note">Secured £5,000 of sponsorship from tech firms, opening the event to 300+ students nationwide, and ran venues, power and logistics with university stakeholders.</p>
+            <p class="tl-note">Competed the year before: led a four-person team to build an AI finance assistant for contract analysis and financial literacy, orchestrating parallel Gemini 2.5 Pro agents through asynchronous workflows to cut end-to-end latency, and demoed it to non-technical judges.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-when">Oct 2025 — present</div>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2025-10">Oct 2025</time> — present</p>
           <div class="tl-body">
             <span class="tl-dot" aria-hidden="true"></span>
             <h3 class="tl-role">Head of Machine Learning</h3>
-            <p class="tl-org">Warwick Racing</p>
-            <p class="tl-note">Own the perception and control stack against a strict latency budget. Work across the electrical and mechanical teams to get it onto the car.</p>
+            <p class="tl-org">Warwick Racing · Coventry</p>
+            <p class="tl-item__prior">Software Engineer, <time datetime="2025-10">Oct</time> — <time datetime="2025-12">Dec 2025</time></p>
+            <ul class="tl-note work-row__bullets">
+              <li>Built the perception stack: segmentation CNNs detect track cones from onboard camera data, with LiDAR clustering fused in for robust multi-sensor localisation. Adding the LiDAR clustering stage raised cone-detection mAP@0.5 from 0.71 to 0.84 on 2,400 held-out frames.</li>
+              <li>Trained reinforcement learning and supervised steering models in closed-loop simulation, focused on sample efficiency and sim-to-real transfer. Cut mean cross-track error from 0.42 m to 0.28 m over 150 simulated laps against the pure-pursuit baseline.</li>
+              <li>Integrated SLAM and sensor-fusion outputs into the motion control loop, working with the electrical and mechanical sub-teams to turn perception into steering and speed commands inside a 50 ms frame-to-actuation budget.</li>
+              <li>Ran the workflow end to end: dataset pipelines, evaluation against precision/recall, IoU and reward curves, Docker packaging, and design reviews across a large cross-functional team.</li>
+            </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item">
-          <div class="tl-when">Jun 2022 — Sep 2024</div>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2023-06">Jun 2023</time> — <time datetime="2024-09">Sep 2024</time></p>
           <div class="tl-body">
             <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
             <h3 class="tl-role">Founder and Lead Developer</h3>
-            <p class="tl-org">Student web development agency</p>
-            <p class="tl-note">Founded and led a cross-functional team delivering frontend, backend and database work for 10+ local businesses. Owned the full SDLC from client consultation to deployment and maintenance.</p>
+            <p class="tl-org">Student web development agency · Remote</p>
+            <p class="tl-note">Founded and led a cross-functional team — frontend, backend, database and marketing — delivering end-to-end web work for 10+ local businesses. Owned the full lifecycle from client consultation and requirements gathering through deployment and maintenance, and was the client-facing point of contact translating business requirements into technical specifications.</p>
           </div>
-        </div>
+        </article>
 
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="education" class="section">
       <div class="section__head">
-        <h2>projects</h2>
-        <span class="section__rule" aria-hidden="true"></span>
-        <span class="section__count">04</span>
-      </div>
-
-      <a class="work-row" href="https://github.com/joshbeira" rel="noopener">
-        <span class="work-row__num" aria-hidden="true">01</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">Text-to-Image Person Re-Identification</h3>
-          <p class="work-row__body">Bursary-funded independent research. Built a generative data augmentation pipeline using Stable Diffusion to replace backgrounds and isolate subjects, then fine-tuned CLIP on the noise-reduced set with custom loss functions.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">Stable Diffusion</span>
-          <span class="tag">CLIP</span>
-          <span class="tag">PyTorch</span>
-        </div>
-        <span class="work-row__when">2026</span>
-      </a>
-
-      <a class="work-row" href="https://github.com/joshbeira" rel="noopener">
-        <span class="work-row__num" aria-hidden="true">02</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">Real-time perception and steering for an autonomous race car</h3>
-          <p class="work-row__body">Segmentation CNNs detect track cones; LiDAR clustering lifted accuracy 47%. RL and supervised steering models cut error 34%. Docker-packaged, ≤50 ms from frame to command.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">PyTorch</span>
-          <span class="tag">OpenCV</span>
-          <span class="tag">ROS</span>
-          <span class="tag">Docker</span>
-          <span class="tag">SQL</span>
-        </div>
-        <span class="work-row__when">2025 —</span>
-      </a>
-
-      <a class="work-row" href="https://github.com/joshbeira" rel="noopener">
-        <span class="work-row__num" aria-hidden="true">03</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">AI finance assistant — financial literacy and contract analysis</h3>
-          <p class="work-row__body">Led a four-person hackathon team. Asynchronous workflows orchestrate parallel Gemini 2.5 Pro agents through the Google API, cutting end-to-end latency. Demoed to non-technical judges.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">Flask</span>
-          <span class="tag">React</span>
-          <span class="tag">Gemini 2.5 Pro</span>
-          <span class="tag">SQL</span>
-        </div>
-        <span class="work-row__when">2025</span>
-      </a>
-
-      <a class="work-row" href="https://github.com/joshbeira/COVID-Mortality-Risk-Model" rel="noopener">
-        <span class="work-row__num" aria-hidden="true">04</span>
-        <div class="work-row__main">
-          <h3 class="work-row__title">COVID-19 mortality risk model, from scratch</h3>
-          <p class="work-row__body">Logistic regression written without high-level ML libraries — NumPy, Pandas and hand-derived gradient descent. Feature-engineered a large clinical dataset to 75.82% accuracy, evaluated on precision and recall.</p>
-        </div>
-        <div class="tags">
-          <span class="tag">NumPy</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">no sklearn</span>
-        </div>
-        <span class="work-row__when">2025</span>
-      </a>
-
-      <div class="list-end" aria-hidden="true"></div>
-    </section>
-
-    <section id="writing" class="section">
-      <div class="section__head">
-        <h2>writing</h2>
+        <h2>education</h2>
         <span class="section__rule" aria-hidden="true"></span>
       </div>
 
-      <article class="post-row">
-        <h3 class="post-row__title">Why LiDAR clustering fixed what a bigger model could not</h3>
-        <span class="post-row__kind">planned</span>
-        <span class="post-row__when">soon</span>
-      </article>
+      <div class="timeline">
 
-      <article class="post-row">
-        <h3 class="post-row__title">Writing logistic regression without sklearn, and what it teaches you</h3>
-        <span class="post-row__kind">planned</span>
-        <span class="post-row__when">soon</span>
-      </article>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2025-09">Sep 2025</time> — <time datetime="2028-07">Jul 2028</time></p>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">University of Warwick</h3>
+            <p class="tl-org">BSc (Hons) Computer Science</p>
+            <!-- TODO(josh): first-year result at Warwick. Add it here only if it is a First, as "First class, year one". If it is not a First, leave this out permanently and delete this TODO. -->
+          </div>
+        </article>
 
-      <article class="post-row">
-        <h3 class="post-row__title">Fifty milliseconds: budgeting latency in an autonomous stack</h3>
-        <span class="post-row__kind">planned</span>
-        <span class="post-row__when">soon</span>
-      </article>
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2023-09">Sep 2023</time> — <time datetime="2025-06">Jun 2025</time></p>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">Cadbury Sixth Form</h3>
+            <p class="tl-org">A-levels: A*A*A*A*A* — Mathematics, Further Mathematics, Computer Science, Physics, EPQ</p>
+            <p class="tl-note">UKMT Senior Mathematical Challenge 2023 — Gold · Further Mathematics Academic Excellence Award</p>
+          </div>
+        </article>
 
-      <div class="list-end" aria-hidden="true"></div>
+      </div>
     </section>
 
     <section id="contact" class="section section--contact">
@@ -217,12 +326,13 @@
       <div class="contact-grid">
         <div class="contact-main">
           <a class="contact-email" href="mailto:joshbeira@gmail.com">joshbeira@gmail.com</a>
-          <p class="contact-note">Always interested in opportunities, collaborations, and interesting conversations.</p>
+          <p class="contact-note">Open to internships and research placements from summer 2027, and always happy to talk about perception under latency, agent evaluation, or anything with a maths problem hiding in it.</p>
         </div>
         <div class="contact-links">
           <span class="contact-links__rule" aria-hidden="true"></span>
-          <a href="https://github.com/joshbeira" rel="me noopener"><span class="contact-links__key">github</span><span>joshbeira</span></a>
-          <a href="https://linkedin.com/in/josh-beira" rel="me noopener"><span class="contact-links__key">linkedin</span><span>josh-beira</span></a>
+          <a href="https://github.com/joshbeira" rel="me noopener" target="_blank"><span class="contact-links__key">github</span><span>joshbeira</span></a>
+          <a href="https://linkedin.com/in/josh-beira" rel="me noopener" target="_blank"><span class="contact-links__key">linkedin</span><span>josh-beira</span></a>
+          <a href="/cv.pdf"><span class="contact-links__key">cv</span><span>cv.pdf</span></a>
         </div>
       </div>
     </section>
@@ -231,9 +341,9 @@
 
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <span>josh beira — 2026</span>
+      <span>josh beira · 2026</span>
       <span class="bg-toggle" role="group" aria-label="Background animation">
-        <span id="bg-note">bg: dijkstra, weighted lattice</span>
+        <span class="bg-toggle__label">background:</span>
         <button type="button" class="bg-btn is-on" data-bg-mode="lattice" aria-pressed="true">dijkstra</button>
         <span class="bg-toggle__sep" aria-hidden="true">/</span>
         <button type="button" class="bg-btn" data-bg-mode="wavefront" aria-pressed="false">bfs</button>
