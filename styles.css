@@ -362,6 +362,34 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
 .work-row__links a { color: var(--ink-dim); }
 .work-row__links a:hover { color: var(--accent); }
 
+/* --- disclosure ------------------------------------------------------------ */
+
+/* Shared by work cards and experience entries: one closed <details> per item,
+   holding the long copy the collapsed paragraph stands in for. */
+
+.disclose { margin-top: 16px; }
+
+.disclose summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--faint);
+}
+.disclose summary::-webkit-details-marker { display: none; }
+.disclose summary:hover,
+.disclose summary:focus-visible { color: var(--ink); }
+
+.disclose__caret { transition: transform 150ms ease; }
+.disclose[open] > summary .disclose__caret { transform: rotate(180deg); }
+
+.disclose__panel { margin-top: 11px; }
+
 /* --- experience ------------------------------------------------------------ */
 
 .tl-item { display: flex; flex-wrap: wrap; align-items: flex-start; }
@@ -421,7 +449,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
   color: var(--faint);
 }
 
-.tl-note {
+.tl-note,
+.tl-item__summary {
   margin-top: 11px;
   max-width: 64ch;
   font-size: 14px;
@@ -531,6 +560,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
   html { scroll-behavior: auto; }
   .skip,
   .work-row,
+  .disclose__caret,
   .hero__photo { transition: none; }
 }
 
