@@ -31,6 +31,7 @@ paths (`/work/…`, `/img/…`), which is what lets the canonical URLs, the site
 | `img/` | Hero photo at display size, WebP + JPEG, 1× and 2×. `profile.jpg` is the uncropped master and is not served to the page. |
 | `site.webmanifest` | Name, colours and icons for install prompts. |
 | `.github/workflows/deploy.yml` | Builds nothing; uploads the repo root to GitHub Pages on push to `main`. |
+| `googled2f802e0fa480847.html` | Google Search Console proof of ownership. **Do not delete or edit** — Google re-checks it, and removing it revokes the property. |
 | `.nojekyll` | Stops Pages running the files through Jekyll. |
 
 ## Editing content

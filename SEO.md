@@ -42,14 +42,20 @@ On-page work gets you eligible. Links and profile consistency are what actually 
 
 ### 1. Google Search Console (do this first)
 
-1. Go to <https://search.google.com/search-console> → **Add property** → **URL prefix** →
-   `https://joshbeira.com`.
-2. Choose **HTML tag** verification. Copy the token out of the `content="..."` attribute.
-3. In `index.html`, find the commented `google-site-verification` block near the top of `<head>`,
-   paste your token in, and uncomment the line.
-4. Push, wait for the Pages deploy, then hit **Verify**.
-5. Once verified: **Sitemaps** → submit `sitemap.xml`. Then **URL Inspection** → paste
-   `https://joshbeira.com/` → **Request indexing**. Do the same for each `/work/…/` page.
+Verified by the **HTML file** method. `googled2f802e0fa480847.html` sits at the repo root and is
+served at <https://joshbeira.com/googled2f802e0fa480847.html>.
+
+**Do not delete that file.** Google re-checks it periodically; if it disappears, verification is
+revoked and you lose the property. It is 53 bytes and must stay byte-for-byte as Google issued it —
+never reformat it, and never add a `noindex` or a robots rule that blocks it.
+
+Remaining steps, in Search Console:
+
+1. Hit **Verify** on the property (after the deploy has gone out).
+2. **Sitemaps** → submit `sitemap.xml`.
+3. **URL Inspection** → paste each URL → **Request indexing**. All seven:
+   `/`, `/work/`, `/work/pdtbench/`, `/work/penny/`, `/work/byte-the-evidence/`,
+   `/work/lambdagpt/`, `/work/covid-mortality-risk-model/`.
 
 Check **Performance** monthly. It tells you the queries you actually appear for, which is the only
 honest input to what to write next.
