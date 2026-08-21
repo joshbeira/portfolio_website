@@ -209,18 +209,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
   border: 1px solid var(--border);
 }
 
-.hero__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 9px;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  color: var(--faint);
-  margin-bottom: 26px;
-}
-.hero__pulse { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
 .hero__sep { color: var(--sep); }
 
 .hero__name {

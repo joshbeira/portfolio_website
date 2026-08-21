@@ -42,8 +42,8 @@
       <span class="brand__name">Josh Beira</span>
     </a>
     <nav class="nav" aria-label="Sections">
-      <a href="#work">work</a>
       <a href="#experience">experience</a>
+      <a href="#work">work</a>
       <a href="#education">education</a>
       <a href="#contact">contact</a>
     </nav>
@@ -56,12 +56,6 @@
         <img class="hero__photo" src="profile.jpg" width="120" height="120"
              alt="Josh Beira" decoding="async">
         <div class="hero__text">
-        <p class="hero__meta">
-          <span class="hero__pulse" aria-hidden="true"></span>
-          <span>coventry, uk</span>
-          <span class="hero__sep" aria-hidden="true">·</span>
-          <span>university of warwick</span>
-        </p>
         <h1 class="hero__name">Josh Beira</h1>
         <p class="hero__lead">Computer Science at Warwick. Head of Machine Learning at Warwick Racing.</p>
         <p class="hero__body">I build machine learning systems that have to survive a constraint — a 50 ms deadline on a moving car, a user who cannot see the screen, or a benchmark designed to catch me fooling myself.</p>
@@ -76,6 +70,107 @@
           <a href="https://linkedin.com/in/josh-beira" rel="noopener" target="_blank">linkedin</a>
         </p>
         </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section__head">
+        <h2>experience</h2>
+        <span class="section__rule" aria-hidden="true"></span>
+        <span class="section__count">2023 — now</span>
+      </div>
+
+      <div class="timeline">
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — <time datetime="2026-08">Aug 2026</time></p>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">Tech and Data Science Internship Scholar</h3>
+            <p class="tl-org">Generating Genius · London</p>
+            <p class="tl-item__summary">Selected for Generating Genius’s technology and data science programme, run with PDT Partners and National Grid.</p>
+            <details class="disclose">
+              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
+              <div class="disclose__panel">
+                <!-- TODO(josh): add the selectivity of the Generating Genius programme as the opening sentence of this panel, e.g. “One of N places from M applicants.” The figure previously here was a placeholder, not a real number. -->
+                <p class="tl-note">Built pdtbench at the PDT hackathon: an agentic trading benchmark that separates a model’s trading skill from its memory of the chart.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — present</p>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Research Intern, Artificial Intelligence and Machine Learning</h3>
+            <p class="tl-org">Department of Computer Science, University of Warwick · Coventry</p>
+            <p class="tl-item__summary">Bursary-funded independent research on text-to-image person re-identification, building a generative augmentation pipeline and fine-tuning CLIP against its attribute-binding weakness.</p>
+            <details class="disclose">
+              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
+              <div class="disclose__panel">
+                <p class="tl-note">Engineered a generative data augmentation pipeline that uses Stable Diffusion to replace image backgrounds and isolate subjects, producing a lower-noise training set. Fine-tuned CLIP on it with custom loss functions and benchmarked against published baselines on CUHK-PEDES.</p>
+                <!-- TODO(josh): add the research result as a final sentence — Rank-1 and mAP against the CLIP baseline, ideally on colour-perturbed queries. Do not restore the previous sentence: it claimed to have “discovered and proved” CLIP’s attribute-binding weakness, which is a published result (Yuksekgonul et al., ICLR 2023), contained four spelling and grammar errors, and conflated colour sensitivity with the bag-of-words problem. -->
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2026-01">Jan 2026</time> — present</p>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Organiser, Logistics and Outreach</h3>
+            <p class="tl-org">The Warwick Hackathon (WHACK) · Coventry</p>
+            <p class="tl-item__summary">Secured £5,000 of sponsorship from tech firms, opening the event to 300+ students nationwide.</p>
+            <details class="disclose">
+              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
+              <div class="disclose__panel">
+                <p class="tl-note">Ran venues, power and logistics with university stakeholders.</p>
+                <p class="tl-note">Competed the year before: led a four-person team to build an AI finance assistant for contract analysis and financial literacy, orchestrating parallel Gemini 2.5 Pro agents through asynchronous workflows to cut end-to-end latency, and demoed it to non-technical judges.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2025-10">Oct 2025</time> — present</p>
+          <div class="tl-body">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <h3 class="tl-role">Head of Machine Learning</h3>
+            <p class="tl-org">Warwick Racing · Coventry</p>
+            <p class="tl-item__prior">Software Engineer, <time datetime="2025-10">Oct</time> — <time datetime="2025-12">Dec 2025</time></p>
+            <p class="tl-item__summary">Own the perception and steering stack for Warwick’s autonomous car: segmentation CNNs and LiDAR clustering in, steering and speed commands out, inside a 50 ms budget.</p>
+            <details class="disclose">
+              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
+              <div class="disclose__panel">
+                <ul class="work-row__bullets">
+                  <li>Built the perception stack: segmentation CNNs detect track cones from onboard camera data, with LiDAR clustering fused in for robust multi-sensor localisation.<!-- TODO(josh): add the perception result as metric, baseline and value from the real W&B runs, e.g. “Adding LiDAR clustering raised cone-detection mAP@0.5 from A to B on N held-out frames.” The figures previously here (0.71 → 0.84, 2,400 frames) were placeholders, not measurements. --></li>
+                  <li>Trained reinforcement learning and supervised steering models in closed-loop simulation, focused on sample efficiency and sim-to-real transfer.<!-- TODO(josh): add the steering result as metric, baseline and value from the real runs. The figures previously here (0.42 m → 0.28 m, 150 laps) were placeholders, not measurements. --></li>
+                  <li>Integrated SLAM and sensor-fusion outputs into the motion control loop, working with the electrical and mechanical sub-teams to turn perception into steering and speed commands inside a 50 ms frame-to-actuation budget.</li>
+                  <li>Ran the workflow end to end: dataset pipelines, evaluation against precision/recall, IoU and reward curves, Docker packaging, and design reviews across a large cross-functional team.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="tl-item">
+          <p class="tl-when"><time datetime="2023-06">Jun 2023</time> — <time datetime="2024-09">Sep 2024</time></p>
+          <div class="tl-body">
+            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
+            <h3 class="tl-role">Founder and Lead Developer</h3>
+            <p class="tl-org">Student web development agency · Remote</p>
+            <p class="tl-item__summary">Founded and led a student web development agency delivering end-to-end work for 10+ local businesses.</p>
+            <details class="disclose">
+              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
+              <div class="disclose__panel">
+                <p class="tl-note">Led a cross-functional team across frontend, backend, database and marketing. Owned the full lifecycle from client consultation and requirements gathering through deployment and maintenance, and was the client-facing point of contact translating business requirements into technical specifications.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -244,107 +339,6 @@
       <div class="list-end" aria-hidden="true"></div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="section__head">
-        <h2>experience</h2>
-        <span class="section__rule" aria-hidden="true"></span>
-        <span class="section__count">2023 — now</span>
-      </div>
-
-      <div class="timeline">
-
-        <article class="tl-item">
-          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — <time datetime="2026-08">Aug 2026</time></p>
-          <div class="tl-body">
-            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
-            <h3 class="tl-role">Tech and Data Science Internship Scholar</h3>
-            <p class="tl-org">Generating Genius · London</p>
-            <p class="tl-item__summary">Selected for Generating Genius’s technology and data science programme, run with PDT Partners and National Grid.</p>
-            <details class="disclose">
-              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
-              <div class="disclose__panel">
-                <!-- TODO(josh): add the selectivity of the Generating Genius programme as the opening sentence of this panel, e.g. “One of N places from M applicants.” The figure previously here was a placeholder, not a real number. -->
-                <p class="tl-note">Built pdtbench at the PDT hackathon: an agentic trading benchmark that separates a model’s trading skill from its memory of the chart.</p>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="tl-item">
-          <p class="tl-when"><time datetime="2026-06">Jun 2026</time> — present</p>
-          <div class="tl-body">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <h3 class="tl-role">Research Intern, Artificial Intelligence and Machine Learning</h3>
-            <p class="tl-org">Department of Computer Science, University of Warwick · Coventry</p>
-            <p class="tl-item__summary">Bursary-funded independent research on text-to-image person re-identification, building a generative augmentation pipeline and fine-tuning CLIP against its attribute-binding weakness.</p>
-            <details class="disclose">
-              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
-              <div class="disclose__panel">
-                <p class="tl-note">Engineered a generative data augmentation pipeline that uses Stable Diffusion to replace image backgrounds and isolate subjects, producing a lower-noise training set. Fine-tuned CLIP on it with custom loss functions and benchmarked against published baselines on CUHK-PEDES.</p>
-                <!-- TODO(josh): add the research result as a final sentence — Rank-1 and mAP against the CLIP baseline, ideally on colour-perturbed queries. Do not restore the previous sentence: it claimed to have “discovered and proved” CLIP’s attribute-binding weakness, which is a published result (Yuksekgonul et al., ICLR 2023), contained four spelling and grammar errors, and conflated colour sensitivity with the bag-of-words problem. -->
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="tl-item">
-          <p class="tl-when"><time datetime="2026-01">Jan 2026</time> — present</p>
-          <div class="tl-body">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <h3 class="tl-role">Organiser, Logistics and Outreach</h3>
-            <p class="tl-org">The Warwick Hackathon (WHACK) · Coventry</p>
-            <p class="tl-item__summary">Secured £5,000 of sponsorship from tech firms, opening the event to 300+ students nationwide.</p>
-            <details class="disclose">
-              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
-              <div class="disclose__panel">
-                <p class="tl-note">Ran venues, power and logistics with university stakeholders.</p>
-                <p class="tl-note">Competed the year before: led a four-person team to build an AI finance assistant for contract analysis and financial literacy, orchestrating parallel Gemini 2.5 Pro agents through asynchronous workflows to cut end-to-end latency, and demoed it to non-technical judges.</p>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="tl-item">
-          <p class="tl-when"><time datetime="2025-10">Oct 2025</time> — present</p>
-          <div class="tl-body">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <h3 class="tl-role">Head of Machine Learning</h3>
-            <p class="tl-org">Warwick Racing · Coventry</p>
-            <p class="tl-item__prior">Software Engineer, <time datetime="2025-10">Oct</time> — <time datetime="2025-12">Dec 2025</time></p>
-            <p class="tl-item__summary">Own the perception and steering stack for Warwick’s autonomous car: segmentation CNNs and LiDAR clustering in, steering and speed commands out, inside a 50 ms budget.</p>
-            <details class="disclose">
-              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
-              <div class="disclose__panel">
-                <ul class="work-row__bullets">
-                  <li>Built the perception stack: segmentation CNNs detect track cones from onboard camera data, with LiDAR clustering fused in for robust multi-sensor localisation.<!-- TODO(josh): add the perception result as metric, baseline and value from the real W&B runs, e.g. “Adding LiDAR clustering raised cone-detection mAP@0.5 from A to B on N held-out frames.” The figures previously here (0.71 → 0.84, 2,400 frames) were placeholders, not measurements. --></li>
-                  <li>Trained reinforcement learning and supervised steering models in closed-loop simulation, focused on sample efficiency and sim-to-real transfer.<!-- TODO(josh): add the steering result as metric, baseline and value from the real runs. The figures previously here (0.42 m → 0.28 m, 150 laps) were placeholders, not measurements. --></li>
-                  <li>Integrated SLAM and sensor-fusion outputs into the motion control loop, working with the electrical and mechanical sub-teams to turn perception into steering and speed commands inside a 50 ms frame-to-actuation budget.</li>
-                  <li>Ran the workflow end to end: dataset pipelines, evaluation against precision/recall, IoU and reward curves, Docker packaging, and design reviews across a large cross-functional team.</li>
-                </ul>
-              </div>
-            </details>
-          </div>
-        </article>
-
-        <article class="tl-item">
-          <p class="tl-when"><time datetime="2023-06">Jun 2023</time> — <time datetime="2024-09">Sep 2024</time></p>
-          <div class="tl-body">
-            <span class="tl-dot tl-dot--dim" aria-hidden="true"></span>
-            <h3 class="tl-role">Founder and Lead Developer</h3>
-            <p class="tl-org">Student web development agency · Remote</p>
-            <p class="tl-item__summary">Founded and led a student web development agency delivering end-to-end work for 10+ local businesses.</p>
-            <details class="disclose">
-              <summary>details<span class="disclose__caret" aria-hidden="true">▾</span></summary>
-              <div class="disclose__panel">
-                <p class="tl-note">Led a cross-functional team across frontend, backend, database and marketing. Owned the full lifecycle from client consultation and requirements gathering through deployment and maintenance, and was the client-facing point of contact translating business requirements into technical specifications.</p>
-              </div>
-            </details>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
     <section id="education" class="section">
       <div class="section__head">
         <h2>education</h2>
@@ -384,7 +378,7 @@
       <div class="contact-grid">
         <div class="contact-main">
           <a class="contact-email" href="mailto:joshbeira@gmail.com">joshbeira@gmail.com</a>
-          <p class="contact-note">Open to internships and research placements from summer 2027, and always happy to talk about perception under latency, agent evaluation, or anything with a maths problem hiding in it.</p>
+          <p class="contact-note">Always interested in opportunities, collaborations, and interesting conversations.</p>
         </div>
         <div class="contact-links">
           <span class="contact-links__rule" aria-hidden="true"></span>
