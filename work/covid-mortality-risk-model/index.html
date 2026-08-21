@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>COVID-19 mortality risk — a negative result | Josh Beira</title>
+<meta name="description" content="Logistic regression hand-derived in NumPy: 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.">
+<meta name="author" content="Josh Beira">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#100F0E">
+<meta name="color-scheme" content="dark">
+
+<link rel="canonical" href="https://joshbeira.com/work/covid-mortality-risk-model/">
+<meta property="og:url" content="https://joshbeira.com/work/covid-mortality-risk-model/">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-06-01">
+<meta property="article:author" content="Josh Beira">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="COVID-19 mortality risk — a negative result | Josh Beira">
+<meta property="og:description" content="Logistic regression hand-derived in NumPy: 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.">
+<meta property="og:site_name" content="Josh Beira">
+<meta property="og:image" content="https://joshbeira.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Josh Beira — machine learning and real-time systems">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="COVID-19 mortality risk — a negative result | Josh Beira">
+<meta name="twitter:description" content="Logistic regression hand-derived in NumPy: 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.">
+<meta name="twitter:image" content="https://joshbeira.com/og.png">
+
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://joshbeira.com/#person",
+      "name": "Josh Beira",
+      "url": "https://joshbeira.com/",
+      "sameAs": [
+        "https://github.com/joshbeira",
+        "https://linkedin.com/in/josh-beira"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://joshbeira.com/#website",
+      "url": "https://joshbeira.com/",
+      "name": "Josh Beira",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://joshbeira.com/#person"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "josh beira",
+          "item": "https://joshbeira.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "work",
+          "item": "https://joshbeira.com/work/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "COVID-19 mortality risk"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://joshbeira.com/work/covid-mortality-risk-model/#webpage",
+      "url": "https://joshbeira.com/work/covid-mortality-risk-model/",
+      "name": "COVID-19 mortality risk — a negative result | Josh Beira",
+      "description": "Logistic regression hand-derived in NumPy: 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://joshbeira.com/#website"
+      },
+      "primaryImageOfPage": "https://joshbeira.com/og.png",
+      "about": {
+        "@id": "https://joshbeira.com/work/covid-mortality-risk-model/#project"
+      },
+      "author": {
+        "@id": "https://joshbeira.com/#person"
+      }
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://joshbeira.com/work/covid-mortality-risk-model/#project",
+      "name": "COVID-19 mortality risk — logistic regression from scratch, and a negative result",
+      "headline": "COVID-19 mortality risk — logistic regression from scratch, and a negative result",
+      "abstract": "Logistic regression written from scratch in NumPy — sigmoid, cross-entropy and hand-derived gradients. It scored 75.82% accuracy against a 75.63% baseline, which is to say it learned almost nothing.",
+      "description": "Logistic regression hand-derived in NumPy: 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.",
+      "url": "https://joshbeira.com/work/covid-mortality-risk-model/",
+      "codeRepository": "https://github.com/joshbeira/COVID-Mortality-Risk-Model",
+      "programmingLanguage": [
+        "Python"
+      ],
+      "runtimePlatform": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "from scratch"
+      ],
+      "keywords": "logistic regression, NumPy, gradient descent, class imbalance, cross-entropy, negative result, machine learning from scratch, model evaluation",
+      "datePublished": "2025-06-01",
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://joshbeira.com/#person"
+      },
+      "creator": {
+        "@id": "https://joshbeira.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://joshbeira.com/#selected-work"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+<canvas id="bg" class="bg-canvas" aria-hidden="true"></canvas>
+
+<div class="page">
+
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="brand__name">Josh Beira</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="/#experience">experience</a>
+      <a href="/work/">work</a>
+      <a href="/#education">education</a>
+      <a href="/#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap" tabindex="-1">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">josh beira</a></li>
+        <li><a href="/work/">work</a></li>
+        <li aria-current="page">COVID-19 mortality risk</li>
+      </ol>
+    </nav>
+
+    <article class="case">
+      <p class="case__kicker">2025</p>
+      <h1 class="case__title">COVID-19 mortality risk — logistic regression from scratch, and a negative result</h1>
+      <p class="case__lead">Logistic regression written from scratch in NumPy — sigmoid, cross-entropy and hand-derived gradients. It scored 75.82% accuracy against a 75.63% baseline, which is to say it learned almost nothing.</p>
+      <p class="case__tags"><span class="work-row__tag">Python</span><span class="work-row__tag">NumPy</span><span class="work-row__tag">Pandas</span><span class="work-row__tag">from scratch</span></p>
+      <p class="case__links"><a href="https://github.com/joshbeira/COVID-Mortality-Risk-Model" rel="noopener" target="_blank">repo ↗</a></p>
+
+      <div class="case__body">
+        <h2>written from scratch, on purpose</h2>
+        <p>No scikit-learn in the model — the cost function and both partial derivatives are hand-derived. <code>StandardScaler</code> is the only thing borrowed, and only because unscaled age dominates the gradient and skews the cost surface.</p>
+        <h2>the result</h2>
+        <p><strong>75.82% accuracy against a 75.63% majority-class baseline.</strong> Recall 2.35%: it found 27 of 1,148 deaths.</p>
+        <p>Accuracy looks respectable and is almost entirely the baseline. On the metric that matters clinically, the model had learned almost nothing.</p>
+        <h2>diagnosed rather than buried</h2>
+        <p>Severe class imbalance, no class weighting, threshold left at 0.5. Written up in the README as unsuitable for clinical use, because it is.</p>
+        <p>A model that reports 75.82% accuracy and stops there is a misleading result. The interesting part of this project is the gap between the number that flatters it and the number that condemns it.</p>
+      </div>
+    </article>
+
+    <nav class="case-nav" aria-label="More work">
+      <a class="case-nav__prev" href="/work/lambdagpt/"><span class="case-nav__dir">← previous</span><span class="case-nav__name">λGPT</span></a>
+    </nav>
+
+    <p class="case-back"><a href="/work/">all work</a><span class="hero__sep" aria-hidden="true">·</span><a href="/">josh beira</a></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span>josh beira · 2026</span>
+      <span class="bg-toggle" role="group" aria-label="Background animation">
+        <span class="bg-toggle__label">background:</span>
+        <button type="button" class="bg-btn is-on" data-bg-mode="lattice" aria-pressed="true">dijkstra</button>
+        <span class="bg-toggle__sep" aria-hidden="true">/</span>
+        <button type="button" class="bg-btn" data-bg-mode="wavefront" aria-pressed="false">bfs</button>
+      </span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/scripts/background.js" defer></script>
+</body>
+</html>
