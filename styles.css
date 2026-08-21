@@ -417,7 +417,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 16px); }
   border-radius: 50%;
   background: var(--accent);
 }
-.tl-dot--dim { background: var(--dot-dim); }
 
 .tl-role {
   font-size: clamp(15.5px, 4.2vw, 16.5px);
