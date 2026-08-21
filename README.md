@@ -24,6 +24,7 @@ paths (`/work/…`, `/img/…`), which is what lets the canonical URLs, the site
 | `work/` | **Generated.** Hub page plus one case-study page per project. Rebuilt by `tools/build_work_pages.py` — do not hand-edit. |
 | `tools/build_work_pages.py` | Source of truth for the project pages and `sitemap.xml`. Edit `PROJECTS`, re-run. |
 | `SEO.md` | What is set up, what still needs doing by hand, and what is realistic to rank for. |
+| `llms.txt` | Plain-text site map for AI agents (llmstxt.org format). Hand-written, and it duplicates project descriptions — add a project, add it here too. |
 | `styles.css` | Design tokens on `:root`, then one section of rules per page section. Block order does not track page order — the projects rules precede the experience timeline rules. |
 | `scripts/background.js` | The animated graph-traversal canvas. Nothing else on the page depends on it. |
 | `favicon.svg` | Two nodes and an edge, in the accent colour. Unused by the pages — the live icons are the generated PNGs below. |

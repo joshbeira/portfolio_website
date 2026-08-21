@@ -1,0 +1,31 @@
+# Josh Beira
+
+> Computer Science at the University of Warwick and Head of Machine Learning at
+> Warwick Racing. Builds machine learning systems that have to survive a hard
+> constraint — a 50 ms deadline on a moving car, a user who cannot see the
+> screen, or a benchmark designed to catch its author fooling himself.
+
+This site is a personal portfolio. It is static HTML, fully server-rendered,
+and open to crawlers and AI agents — see /robots.txt and /sitemap.xml.
+
+Contact: joshbeira@gmail.com
+GitHub: https://github.com/joshbeira
+LinkedIn: https://linkedin.com/in/josh-beira
+
+## Pages
+
+- [Home](https://joshbeira.com/): Experience, selected work, education and contact details in one page.
+- [Work](https://joshbeira.com/work/): Index of five projects — an agentic trading benchmark, voice-first accessible banking, a legal negotiation trainer, and a Haskell natural-language REPL.
+
+## Projects
+
+- [pdtbench](https://joshbeira.com/work/pdtbench/): An LLM trading benchmark that separates skill from memorising the chart — every real market window is paired with a synthetic twin. 1st at the PDT hackathon.
+- [Penny](https://joshbeira.com/work/penny/): Voice-first banking for blind and low-vision customers — nothing executes until Penny says what will happen and the user confirms it. Barclays Accessibility Challenge.
+- [Byte the Evidence](https://joshbeira.com/work/byte-the-evidence/): An Ace Attorney-style trainer where junior M&A lawyers negotiate against AI opposing counsel that plants errors and hides facts. 2nd, Legora track, Hack the Law.
+- [λGPT](https://joshbeira.com/work/lambdagpt/): A conversational REPL in Haskell with no model behind it — every intent is a Megaparsec parser, every answer is derived, and nothing is generated.
+- [COVID-19 mortality risk](https://joshbeira.com/work/covid-mortality-risk-model/): Logistic regression hand-derived in NumPy — 75.82% accuracy against a 75.63% majority-class baseline, and 2.35% recall. A negative result, written up as one.
+
+## Optional
+
+- [CV (PDF)](https://joshbeira.com/cv.pdf): Full curriculum vitae.
+- [Sitemap](https://joshbeira.com/sitemap.xml): All indexable URLs.
